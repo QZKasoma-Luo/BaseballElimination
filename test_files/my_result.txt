@@ -1,0 +1,96 @@
+Results for teams1.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams10.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams12-allgames.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams12.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams24.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams29.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams30.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams32.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams36.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams4.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams42.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams48.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams4a.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams4b.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams5.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams50.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams54.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams5a.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams5b.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams5c.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams5d.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams60.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams7.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
+Results for teams8.txt:
+Reading input values from stdin.
+No teams have been eliminated.
+----------------------------------------------
