@@ -16,13 +16,13 @@ output_file="${test_folder_path}/my_result.txt"
 for infile in "${test_folder_path}"/teams*; do
   # Exclude any answer files or the output file itself
   if [[ "$infile" != *_output.txt ]] && [[ "$(basename "$infile")" != "my_result.txt" ]]; then
-    # Append the name of the test file to the output file
+    # Append the name of the test file to the output file for clarity
     echo "Results for $(basename "$infile"):" >> "$output_file"
   
-    # Run the Java program and append the output to the output file
-    java BaseballElimination < "$infile" >> "$output_file"
+    # Execute the Java program with the test file as a parameter and append the output to the result file
+    java BaseballElimination "$infile" >> "$output_file"
   
-    # Append a separator to the output file
+    # Insert a delimiter to visually separate the results of different test files in the result file
     echo "----------------------------------------------" >> "$output_file"
   fi
 done

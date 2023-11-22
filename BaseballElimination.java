@@ -73,7 +73,7 @@ public class BaseballElimination{
 			s = new Scanner(System.in);
 			System.out.printf("Reading input values from stdin.\n");
 		}
-		
+
 		BaseballElimination be = new BaseballElimination(s);		
 		
 		if (be.eliminated.size() == 0)
