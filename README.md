@@ -13,15 +13,20 @@ BaseballElimination is a Java program designed to solve the baseball elimination
 
 ## Installation
 Ensure Java is installed on your system and `algs4.jar` is included in your project's classpath.
+1. **Download: Click on this [link](http://algs4.cs.princeton.edu/code/algs4.jar) to download the jar file**
+2. **Move: Open the terminal and navigate to the directory where the file ”algs4.jar” was saved.**
+3. **Extract: From the correct directory, run: jar xf algs4.jar**
+4. **New Files: You should see the following files now in this directory: META-INF/, TestAlgs4 class, TestAlgs4.java, edu/, COPYING; where the to files ending with ”/” are directories.**
+5. **Test: Check the installation by running: java -cp algs4.jar TestAlgs4**
 
 ## Usage
 1. **Compile the Program**:
    ```bash
    javac -cp .;path/to/algs4.jar BaseballElimination.java
-2. **Rune the Program:
+2. **Rune the Program**:
    ```bash
    java -cp .;path/to/algs4.jar BaseballElimination
-3. **Using an Input File:
+3. **Using an Input File**:
    ```bash
    java -cp .;path/to/algs4.jar BaseballElimination path/to/inputfile.txt
 
