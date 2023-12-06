@@ -60,7 +60,7 @@ public class BaseballElimination{
 		
 		/* ... Your code here ... */
 		int teamsNum = s.nextInt(); //Fetch the numbers of Team in the race
-		teams = new Teaminfo[teamsNum];
+		teams = new Teaminfo[teamsNum]; // Initialize the teams class array with the number of teams in the file
 		int largestWinNum = 0;
 
 		//append each teams info separately
@@ -84,14 +84,16 @@ public class BaseballElimination{
 
 		for(int k = 0; k < teamsNum; k++){
 
-			if(teams[k].numWins + teams[k].GameRemaining < largestWinNum){
+			if (teams[k].numWins + teams[k].GameRemaining < largestWinNum) { //early detection to make more efficient
 				eliminated.add(teams[k].TeamName);
-			}else{
+			} else {
 				boolean flag = checkForElimination(k, teamsNum);
-				if(flag == true){
+				if (flag) {
 					eliminated.add(teams[k].TeamName);
+					System.out.println(teams[k].TeamName + " eliminated by flow network");
 				}
 			}
+			
 		}
 
 	}
