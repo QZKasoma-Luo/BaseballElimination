@@ -33,11 +33,20 @@ import edu.princeton.cs.algs4.*;
 import java.util.*;
 import java.io.File;
 
+class Teaminfo{
+	int TeamID;
+	String TeamName;
+	int numWins;
+	int GameRemaining;
+	int[] GamesAgainstOthers;
+}
 //Do not change the name of the BaseballElimination class
 public class BaseballElimination{
 	
 	// We use an ArrayList to keep track of the eliminated teams.
 	public ArrayList<String> eliminated = new ArrayList<String>();
+	private Teaminfo[] teams;
+	private int totalFlow;
 
 	/* BaseballElimination(s)
 		Given an input stream connected to a collection of baseball division
@@ -49,10 +58,88 @@ public class BaseballElimination{
 	*/
 	public BaseballElimination(Scanner s){
 		
-		/* ... Your code here ... */	
+		/* ... Your code here ... */
+		int teamsNum = s.nextInt(); //Fetch the numbers of Team in the race
+		teams = new Teaminfo[teamsNum];
+		int largestWinNum = 0;
+
+		//append each teams info separately
+		for(int i = 0; i < teamsNum; i++){
+			teams[i] = new Teaminfo();
+			teams[i].TeamID = i;
+			teams[i].TeamName = s.next();
+			teams[i].numWins = s.nextInt();
+			teams[i].GameRemaining = s.nextInt();
+			
+			//find the largest win num in the sheets
+			if (teams[i].numWins > largestWinNum) {
+				largestWinNum = teams[i].numWins;
+			}
+			// Initialize the GamesAgainstOthers array for each team
+			teams[i].GamesAgainstOthers = new int[teamsNum];
+			for(int j = 0; j < teamsNum; j++){
+				teams[i].GamesAgainstOthers[j] = s.nextInt();
+			}
+		}
+
+		for(int k = 0; k < teamsNum; k++){
+
+			if(teams[k].numWins + teams[k].GameRemaining < largestWinNum){
+				eliminated.add(teams[k].TeamName);
+			}else{
+				boolean flag = checkForElimination(k, teamsNum);
+				if(flag == true){
+					eliminated.add(teams[k].TeamName);
+				}
+			}
+		}
 
 	}
+
+	public boolean checkForElimination(int teamID, int teamNum){
+
+		FordFulkerson maxflow = teamMaxFlow(teamID, teamNum);
+
+		if(maxflow == null){
+			return true;
+		}else{
+			return totalFlow>maxflow.value();
+		}
 		
+	}
+
+	public FordFulkerson teamMaxFlow(int teamID, int teamNum) {
+		int matchNodes = teamNum * (teamNum - 1) / 2;
+		int totalNodesInNetWork = matchNodes + teamNum + 2;
+		FlowNetwork G = new FlowNetwork(totalNodesInNetWork);
+		int s = 0; // Source
+		int t = totalNodesInNetWork - 1; // Sink
+		int nodeIndex = 1; // Node index for matches
+		totalFlow = 0;
+	
+		for (int i = 0; i < teamNum; i++) {
+			if (i == teamID) continue;
+			for (int k = i + 1; k < teamNum; k++) {
+				if (k == teamID) continue;
+				int games = teams[i].GamesAgainstOthers[k];
+				G.addEdge(new FlowEdge(s, nodeIndex, games));
+				G.addEdge(new FlowEdge(nodeIndex, matchNodes + i + 1, Double.POSITIVE_INFINITY));
+				G.addEdge(new FlowEdge(nodeIndex, matchNodes + k + 1, Double.POSITIVE_INFINITY));
+				nodeIndex++;
+				totalFlow += games;
+			}
+		}
+	
+		for (int i = 0; i < teamNum; i++) {
+			if (i == teamID) continue;
+			int capacity = teams[teamID].numWins + teams[teamID].GameRemaining - teams[i].numWins;
+			if (capacity < 0) return null;
+			G.addEdge(new FlowEdge(matchNodes + i + 1, t, capacity));
+		}
+	
+		return new FordFulkerson(G, s, t);
+	}
+	
 	/* main()
 	   Contains code to test the BaseballElimantion function. You may modify the
 	   testing code if needed, but nothing in this function will be considered
@@ -73,7 +160,6 @@ public class BaseballElimination{
 			s = new Scanner(System.in);
 			System.out.printf("Reading input values from stdin.\n");
 		}
-		
 		BaseballElimination be = new BaseballElimination(s);		
 		
 		if (be.eliminated.size() == 0)
