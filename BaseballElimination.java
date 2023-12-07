@@ -90,7 +90,6 @@ public class BaseballElimination{
 				boolean flag = checkForElimination(k, teamsNum);
 				if (flag) {
 					eliminated.add(teams[k].TeamName);
-					System.out.println(teams[k].TeamName + " eliminated by flow network");
 				}
 			}
 			
