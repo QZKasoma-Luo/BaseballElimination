@@ -33,7 +33,7 @@ import edu.princeton.cs.algs4.*;
 import java.util.*;
 import java.io.File;
 
-class Teaminfo{
+class Teaminfo{ // This class is for loading each team to separate array with corresponding info and unqiue team ID
 	int TeamID;
 	String TeamName;
 	int numWins;
@@ -88,7 +88,7 @@ public class BaseballElimination{
 				eliminated.add(teams[k].TeamName);
 			} else {
 				boolean flag = checkForElimination(k, teamsNum);
-				if (flag) {
+				if (flag == true) {
 					eliminated.add(teams[k].TeamName);
 				}
 			}
@@ -119,9 +119,15 @@ public class BaseballElimination{
 		totalFlow = 0;
 	
 		for (int i = 0; i < teamNum; i++) {
-			if (i == teamID) continue;
+			if (i == teamID){
+				continue;
+			} //skip choosed team in the match
+
 			for (int k = i + 1; k < teamNum; k++) {
-				if (k == teamID) continue;
+				if (k == teamID){
+					continue;
+				} //skip choosed team in the mach
+
 				int games = teams[i].GamesAgainstOthers[k];
 				G.addEdge(new FlowEdge(s, nodeIndex, games));
 				G.addEdge(new FlowEdge(nodeIndex, matchNodes + i + 1, Double.POSITIVE_INFINITY));
@@ -133,8 +139,8 @@ public class BaseballElimination{
 	
 		for (int i = 0; i < teamNum; i++) {
 			if (i == teamID) continue;
-			int capacity = teams[teamID].numWins + teams[teamID].GameRemaining - teams[i].numWins;
-			if (capacity < 0) return null;
+			int capacity = teams[teamID].numWins + teams[teamID].GameRemaining - teams[i].numWins; //w+r-wi
+			if (capacity < 0) return null; //capacity cannot be negative
 			G.addEdge(new FlowEdge(matchNodes + i + 1, t, capacity));
 		}
 	

@@ -30,6 +30,9 @@ for infile in "${test_folder_path}"/teams*.txt; do
     if [[ -f "$official_output_file" ]]; then
       last_line_official_output=$(tail -n 1 "$official_output_file")
 
+      echo "Official output: $last_line_official_output" >> "$output_file"
+
+
       # Compare the last lines and write the result
       if [ "$last_line_program_output" == "$last_line_official_output" ]; then
         echo "Result: PASS" >> "$output_file"

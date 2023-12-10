@@ -1,236 +1,144 @@
 Results for teams1.txt:
 Reading input values from test_files/teams1.txt.
 No teams have been eliminated.
+Official output: No teams have been eliminated.
 Result: PASS
 ----------------------------------------------
 Results for teams10.txt:
 Reading input values from test_files/teams10.txt.
-Houston eliminated by early detection
 Teams eliminated: [Houston]
+Official output: Teams eliminated: [Houston]
 Result: PASS
 ----------------------------------------------
 Results for teams12-allgames.txt:
 Reading input values from test_files/teams12-allgames.txt.
-Team0 eliminated by early detection
-Team1 eliminated by early detection
-Team2 eliminated by early detection
-Team3 eliminated by early detection
-Team5 eliminated by early detection
-Team6 eliminated by early detection
-Team7 eliminated by early detection
-Team8 eliminated by early detection
-Team9 eliminated by early detection
-Team10 eliminated by early detection
 Teams eliminated: [Team0, Team1, Team2, Team3, Team5, Team6, Team7, Team8, Team9, Team10]
+Official output: Teams eliminated: [Team0, Team1, Team2, Team3, Team5, Team6, Team7, Team8, Team9, Team10]
 Result: PASS
 ----------------------------------------------
 Results for teams12.txt:
 Reading input values from test_files/teams12.txt.
-Japan eliminated by flow network
-Serbia eliminated by flow network
-Egypt eliminated by early detection
-China eliminated by early detection
 Teams eliminated: [Japan, Serbia, Egypt, China]
+Official output: Teams eliminated: [Japan, Serbia, Egypt, China]
 Result: PASS
 ----------------------------------------------
 Results for teams24.txt:
 Reading input values from test_files/teams24.txt.
-Team4 eliminated by early detection
-Team5 eliminated by early detection
-Team7 eliminated by early detection
-Team9 eliminated by early detection
-Team11 eliminated by early detection
-Team12 eliminated by early detection
-Team13 eliminated by flow network
-Team16 eliminated by early detection
-Team19 eliminated by early detection
-Team23 eliminated by early detection
 Teams eliminated: [Team4, Team5, Team7, Team9, Team11, Team12, Team13, Team16, Team19, Team23]
+Official output: Teams eliminated: [Team4, Team5, Team7, Team9, Team11, Team12, Team13, Team16, Team19, Team23]
 Result: PASS
 ----------------------------------------------
 Results for teams29.txt:
 Reading input values from test_files/teams29.txt.
-Detroit eliminated by flow network
-Golden_State eliminated by flow network
-Houston eliminated by flow network
-Indiana eliminated by early detection
-LA_Clippers eliminated by early detection
-LA_Lakers eliminated by flow network
-Memphis eliminated by flow network
-New_Jersey eliminated by flow network
-New_Orleans eliminated by flow network
-New_York eliminated by flow network
-Orlando eliminated by early detection
-Phoenix eliminated by flow network
-Portand eliminated by flow network
-San_Antonio eliminated by flow network
-Toronto eliminated by flow network
-Utah eliminated by flow network
-Washington eliminated by flow network
 Teams eliminated: [Detroit, Golden_State, Houston, Indiana, LA_Clippers, LA_Lakers, Memphis, New_Jersey, New_Orleans, New_York, Orlando, Phoenix, Portand, San_Antonio, Toronto, Utah, Washington]
+Official output: Teams eliminated: [Detroit, Golden_State, Houston, Indiana, LA_Clippers, LA_Lakers, Memphis, New_Jersey, New_Orleans, New_York, Orlando, Phoenix, Portand, San_Antonio, Toronto, Utah, Washington]
 Result: PASS
 ----------------------------------------------
 Results for teams30.txt:
 Reading input values from test_files/teams30.txt.
-Team0 eliminated by early detection
-Team7 eliminated by early detection
-Team12 eliminated by early detection
-Team18 eliminated by flow network
-Team27 eliminated by flow network
 Teams eliminated: [Team0, Team7, Team12, Team18, Team27]
+Official output: Teams eliminated: [Team0, Team7, Team12, Team18, Team27]
 Result: PASS
 ----------------------------------------------
 Results for teams32.txt:
 Reading input values from test_files/teams32.txt.
-Team2 eliminated by early detection
-Team3 eliminated by early detection
-Team12 eliminated by early detection
-Team13 eliminated by early detection
-Team14 eliminated by early detection
-Team17 eliminated by early detection
-Team25 eliminated by flow network
-Team28 eliminated by early detection
-Team29 eliminated by flow network
 Teams eliminated: [Team2, Team3, Team12, Team13, Team14, Team17, Team25, Team28, Team29]
+Official output: Teams eliminated: [Team2, Team3, Team12, Team13, Team14, Team17, Team25, Team28, Team29]
 Result: PASS
 ----------------------------------------------
 Results for teams36.txt:
 Reading input values from test_files/teams36.txt.
-Team17 eliminated by early detection
-Team21 eliminated by flow network
 Teams eliminated: [Team17, Team21]
+Official output: Teams eliminated: [Team17, Team21]
 Result: PASS
 ----------------------------------------------
 Results for teams4.txt:
 Reading input values from test_files/teams4.txt.
-Philadelphia eliminated by flow network
-Montreal eliminated by early detection
 Teams eliminated: [Philadelphia, Montreal]
+Official output: Teams eliminated: [Philadelphia, Montreal]
 Result: PASS
 ----------------------------------------------
 Results for teams42.txt:
 Reading input values from test_files/teams42.txt.
-Team6 eliminated by flow network
-Team14 eliminated by early detection
-Team15 eliminated by flow network
-Team20 eliminated by early detection
-Team23 eliminated by early detection
-Team25 eliminated by flow network
-Team36 eliminated by early detection
-Team37 eliminated by early detection
 Teams eliminated: [Team6, Team14, Team15, Team20, Team23, Team25, Team36, Team37]
+Official output: Teams eliminated: [Team6, Team14, Team15, Team20, Team23, Team25, Team36, Team37]
 Result: PASS
 ----------------------------------------------
 Results for teams48.txt:
 Reading input values from test_files/teams48.txt.
-Team4 eliminated by early detection
-Team6 eliminated by flow network
-Team11 eliminated by early detection
-Team23 eliminated by flow network
-Team25 eliminated by early detection
-Team47 eliminated by flow network
 Teams eliminated: [Team4, Team6, Team11, Team23, Team25, Team47]
+Official output: Teams eliminated: [Team4, Team6, Team11, Team23, Team25, Team47]
 Result: PASS
 ----------------------------------------------
 Results for teams4a.txt:
 Reading input values from test_files/teams4a.txt.
-Ghaddafi eliminated by flow network
-Bin_Ladin eliminated by early detection
 Teams eliminated: [Ghaddafi, Bin_Ladin]
+Official output: Teams eliminated: [Ghaddafi, Bin_Ladin]
 Result: PASS
 ----------------------------------------------
 Results for teams4b.txt:
 Reading input values from test_files/teams4b.txt.
-Hufflepuff eliminated by early detection
-Ravenclaw eliminated by early detection
-Slytherin eliminated by early detection
 Teams eliminated: [Hufflepuff, Ravenclaw, Slytherin]
+Official output: Teams eliminated: [Hufflepuff, Ravenclaw, Slytherin]
 Result: PASS
 ----------------------------------------------
 Results for teams5.txt:
 Reading input values from test_files/teams5.txt.
-Detroit eliminated by flow network
 Teams eliminated: [Detroit]
+Official output: Teams eliminated: [Detroit]
 Result: PASS
 ----------------------------------------------
 Results for teams50.txt:
 Reading input values from test_files/teams50.txt.
 No teams have been eliminated.
+Official output: No teams have been eliminated.
 Result: PASS
 ----------------------------------------------
 Results for teams54.txt:
 Reading input values from test_files/teams54.txt.
-Team3 eliminated by flow network
-Team7 eliminated by early detection
-Team15 eliminated by early detection
-Team29 eliminated by flow network
-Team31 eliminated by early detection
-Team37 eliminated by flow network
-Team43 eliminated by early detection
-Team50 eliminated by flow network
 Teams eliminated: [Team3, Team7, Team15, Team29, Team31, Team37, Team43, Team50]
+Official output: Teams eliminated: [Team3, Team7, Team15, Team29, Team31, Team37, Team43, Team50]
 Result: PASS
 ----------------------------------------------
 Results for teams5a.txt:
 Reading input values from test_files/teams5a.txt.
-Detroit eliminated by flow network
 Teams eliminated: [Detroit]
+Official output: Teams eliminated: [Detroit]
 Result: PASS
 ----------------------------------------------
 Results for teams5b.txt:
 Reading input values from test_files/teams5b.txt.
-Detroit eliminated by early detection
 Teams eliminated: [Detroit]
+Official output: Teams eliminated: [Detroit]
 Result: PASS
 ----------------------------------------------
 Results for teams5c.txt:
 Reading input values from test_files/teams5c.txt.
-Philadelphia eliminated by flow network
-Washington eliminated by early detection
 Teams eliminated: [Philadelphia, Washington]
+Official output: Teams eliminated: [Philadelphia, Washington]
 Result: PASS
 ----------------------------------------------
 Results for teams5d.txt:
 Reading input values from test_files/teams5d.txt.
-Toronto eliminated by flow network
-Detroit eliminated by early detection
 Teams eliminated: [Toronto, Detroit]
+Official output: Teams eliminated: [Toronto, Detroit]
 Result: PASS
 ----------------------------------------------
 Results for teams60.txt:
 Reading input values from test_files/teams60.txt.
-Team5 eliminated by early detection
-Team6 eliminated by flow network
-Team7 eliminated by early detection
-Team9 eliminated by early detection
-Team14 eliminated by early detection
-Team19 eliminated by early detection
-Team21 eliminated by flow network
-Team26 eliminated by early detection
-Team27 eliminated by early detection
-Team30 eliminated by flow network
-Team36 eliminated by early detection
-Team39 eliminated by flow network
-Team40 eliminated by early detection
-Team46 eliminated by early detection
-Team51 eliminated by flow network
-Team53 eliminated by early detection
-Team56 eliminated by early detection
-Team57 eliminated by early detection
 Teams eliminated: [Team5, Team6, Team7, Team9, Team14, Team19, Team21, Team26, Team27, Team30, Team36, Team39, Team40, Team46, Team51, Team53, Team56, Team57]
+Official output: Teams eliminated: [Team5, Team6, Team7, Team9, Team14, Team19, Team21, Team26, Team27, Team30, Team36, Team39, Team40, Team46, Team51, Team53, Team56, Team57]
 Result: PASS
 ----------------------------------------------
 Results for teams7.txt:
 Reading input values from test_files/teams7.txt.
-Ireland eliminated by flow network
-China eliminated by early detection
 Teams eliminated: [Ireland, China]
+Official output: Teams eliminated: [Ireland, China]
 Result: PASS
 ----------------------------------------------
 Results for teams8.txt:
 Reading input values from test_files/teams8.txt.
-Harvard eliminated by flow network
-Yale eliminated by flow network
 Teams eliminated: [Harvard, Yale]
+Official output: Teams eliminated: [Harvard, Yale]
 Result: PASS
 ----------------------------------------------
